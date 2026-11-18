@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Modern To-Do List</title>
+    <link rel="stylesheet" href="/Daily To-do-list/style.css">
+</head>
+
+<body>
+
+    <div class="todo-container">
+        <div class="header">
+            <h1>My Day ✨</h1>
+            <span id="taskCount" class="task-count">0 pending</span>
+        </div>
+
+
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">
+                All <span class="filter-badge" id="countAll">0</span>
+            </button>
+            <button class="filter-btn" data-filter="pending">
+                Pending <span class="filter-badge" id="countPending">0</span>
+            </button>
+            <button class="filter-btn" data-filter="completed">
+                Completed <span class="filter-badge" id="countCompleted">0</span>
+            </button>
+        </div>
+
+
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="What needs to be done today?" autocomplete="off">
+            <button id="addBtn">Add Task</button>
+        </div>
+
+
+        <div class="task-list-wrapper">
+            <ul id="taskList" class="task-list">
+
+            </ul>
+        </div>
+
+        <div class="task-footer" id="taskFooter" style="display: none;">
+            <span id="completedSummary" style="font-size: 0.85rem; color: var(--text-muted);">0 completed</span>
+            <button class="clear-btn" id="clearCompletedBtn">Clear Completed Tasks</button>
+        </div>
+    </div>
+<script src="/Daily To-do-list/main.js"></script>
+
+</body>
+
+</html>
